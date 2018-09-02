@@ -18,7 +18,7 @@
 	<script type="text/javascript">
 	 $(document).ready(function() {
             $('#myContainer').multiscroll({
-            	sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+                sectionsColor: ['#4AC1B0', '#000000', '#78787B'],
             	anchors: ['first', 'second', 'third'],
             	menu: '#menu',
             	navigation: true,
@@ -32,38 +32,46 @@
 <body>
 
 <ul id="menu">
-	<li data-menuanchor="first"><a href="#first">First slide</a></li>
-	<li data-menuanchor="second"><a href="#second">Second slide</a></li>
-	<li data-menuanchor="third"><a href="#third">Third slide</a></li>
+	<li data-menuanchor="first"><a href="#first">Home</a></li>
+	<li data-menuanchor="second"><a href="#second">Projects</a></li>
+	<li data-menuanchor="third"><a href="#third">About</a></li>
 </ul>
 
 <div id="myContainer">
 
-	<div class="ms-left">
+	<div class="ms-left section1" style="width: 50%; position: absolute; height: 100%; left: 0px; top: 0px; touch-action: none;">
 		<div class="ms-section" id="left1">
-			<h1>Left 1</h1>
+            <div class="fullscreen">
+                <h1>welcome</h1>
+                <h2>This is my site, have a scroll around</h2>
+            </div>
 		</div>
 
-		<div class="ms-section" id="left2">
-			<h1>Left 2 </h1>
+		<div class="ms-section section2" id="left2">
+			<h1>projects</h1>
+            <h2>list of projects</h2>
 		</div>
 
-		<div class="ms-section" id="left3">
-			<h1>Left 3</h1>
+		<div class="ms-section section3" id="left3">
+			
 		</div>
 	</div>
 	
-	<div class="ms-right">
+	<div class="ms-right section1">
 		<div class="ms-section" id="right1">
-			<h1>Right 1</h1>
+			
 		</div>
 
-		<div class="ms-section" id="right2">
-			<h1>Right 2</h1>
+		<div class="ms-section section2" id="right2">
+            
+            <div class="csr">
+            </div>
+            
 		</div>
 
-		<div class="ms-section" id="right3">
-			<h1>Right 3</h1>
+		<div class="ms-section section3" id="right3">
+			<h1>about</h1>
+            <h2>something something</h2>
 		</div>
 	</div>	
 </div>
